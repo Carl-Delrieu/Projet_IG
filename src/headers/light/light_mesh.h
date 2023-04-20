@@ -73,6 +73,13 @@ public:
         setupMesh();
     }
 
+    ~LightMesh() {
+        glDeleteVertexArrays(1, &m_VAO);
+        glDeleteBuffers(1, &m_VBO_POS);
+        glDeleteBuffers(1, &m_VBO_COL);
+        glDeleteBuffers(1, &m_EBO);
+    }
+
     void draw(Shader* shader, float width, float height) {
         shader->use();
 
