@@ -42,8 +42,31 @@
 ```shell
     $ cmake -S . -B build/
     $ cmake --build build/
-    $ build/main 
 ```
+
+### running project:
+
+#### Bezier curves
+```shell
+    $ build/curve
+```
+#### Bezier curves with control polygon
+```shell
+    $ build/curve_poly
+```
+#### Bezier surface
+```shell
+    $ build/surface
+```
+#### Bezier surface with control polygon
+```shell
+    $ build/surface_poly
+```
+#### Bezier surface with control polygon and normals
+```shell
+    $ build/surface_normals
+```
+
 ### how to use:
 -   `Z` to move forward
 -   `S` to move backward
@@ -55,6 +78,9 @@
 -   `Arrow key down` to look down
 -   `Arrow key left` to look left
 -   `Arrow key right` to look right
+-   `Scroll up` to zoom in
+-   `Scroll down` to zoom out
+-   `Escape` to quit
 
 ## Sources
 
