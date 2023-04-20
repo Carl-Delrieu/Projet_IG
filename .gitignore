@@ -1,0 +1,9 @@
+### macOS ###
+.DS_Store
+*.icloud
+
+### VisualStudioCode ###
+.vscode/*
+
+### C++ ###
+build/
